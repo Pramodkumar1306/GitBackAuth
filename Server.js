@@ -8,7 +8,7 @@ import userRoute from './routes/UserRoute.js'
 
 const app = express();
 const PORT = process.env.PORT || 8080; 
-const allowedOrigin = ['http://localhost:5173']
+const allowedOrigin = ['http://localhost:5173','https://auth-login-mern-ta9e.vercel.app']
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({origin:allowedOrigin , credentials: true}));
