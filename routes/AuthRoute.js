@@ -6,7 +6,7 @@ const authRouter =  express.Router();
 
 authRouter.get('/test',(req,res) => {
     console.log("HIT /api/auth/test");
-  res.send("Api Is Working");
+    res.send("Api Is Working");
 });
 
 
