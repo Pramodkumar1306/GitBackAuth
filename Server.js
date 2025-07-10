@@ -13,8 +13,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({origin:allowedOrigin , credentials: true}));
 
-const startServer = async () => {
-    await connectDB();
+connectDB();
     //API End Points
 app.get('/',(req,res) => {
     res.send("Api Is Working")
@@ -28,6 +27,4 @@ app.listen(PORT,()=> {
     console.log(`${PORT} Running`)
 })
 
-}
-
-startServer();
+ 
