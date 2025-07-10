@@ -4,7 +4,7 @@ import userAuth from '../middleware/AuthMid.js';
 
 const authRouter =  express.Router();
 
-authRouter.post('/test',(req,res) => {
+authRouter.get('/test',(req,res) => {
     res.send("Api Is Working")
 });
 
